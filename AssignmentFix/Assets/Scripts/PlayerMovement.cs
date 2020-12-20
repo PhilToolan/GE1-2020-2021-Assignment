@@ -2,12 +2,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Text;
+using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour
 {
     public GameObject mainCamera;
     public float speed = 50.0f;
     public float lookSpeed = 150.0f;
+
+    [SerializeField] private string menu;
 
     //public bool allowPitch = true;
 
@@ -88,7 +91,8 @@ public class PlayerMovement : MonoBehaviour
 
         if (Input.GetKey(KeyCode.Escape))
         {
-            Application.Quit();
+            Cursor.visible = true;
+            SceneManager.LoadScene(menu);
         }
 
         if (ball.gameOver == true)

@@ -244,7 +244,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pongEffect: PongEffect
-  retrowave: 
+  retrowave: Retrowave
   theClub: 
 --- !u!1 &1357618945
 GameObject:

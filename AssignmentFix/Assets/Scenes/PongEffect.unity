@@ -10176,6 +10176,7 @@ MonoBehaviour:
   mainCamera: {fileID: 0}
   speed: 50
   lookSpeed: 150
+  menu: MainMenu
   ball: {fileID: 0}
 --- !u!1 &1236380528
 GameObject:
