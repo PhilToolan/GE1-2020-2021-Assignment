@@ -17,22 +17,11 @@ public class TunnelSystem : MonoBehaviour
         {
             Tunnel tunnel = tunnels[i] = Instantiate<Tunnel>(tunnelPrefab);
             tunnel.transform.SetParent(transform, false);
-            //Allign tunnels
+            //Align tunnels
             if (i > 0)
             {
                 tunnel.AlignWith(tunnels[i - 1]);
             }
         }
-    }
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }

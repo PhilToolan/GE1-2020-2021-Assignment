@@ -28,23 +28,18 @@ public class Tunnel : MonoBehaviour
         mesh.name = "Tunnel";
 
         curveRadius = Random.Range(minCurveRadius, maxCurveRadius);
-        curveSegCount = Random.Range(minCurveSegCount, maxCurveSegCount);
+        curveSegCount = Random.Range(minCurveSegCount, maxCurveSegCount + 1);
 
         SetVertices();
         SetTriangles();
         mesh.RecalculateNormals();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 
     Vector3 GetPointOnTunnel (float u, float v)
     {
         Vector3 point;
-        float r = (curveRadius + tunnelRadius + Mathf.Cos(v));
+        float r = (curveRadius + tunnelRadius * Mathf.Cos(v));
         point.x = r * Mathf.Sin(u);
         point.y = r * Mathf.Cos(u);
         point.z = tunnelRadius * Mathf.Sin(v);
@@ -56,6 +51,7 @@ public class Tunnel : MonoBehaviour
     {
         vertices = new Vector3[tunnelSegCount * curveSegCount * 4];
         //float uStep = (2f * Mathf.PI) / curveSegCount; // Closed tunnel
+        
         float uStep = ringDistance / curveRadius; // Allow for partial/multi-curved tunnel 
         curveAngle = uStep * curveSegCount * (360f / (2f * Mathf.PI));
         CreateFirstQuadRing(uStep);
@@ -67,18 +63,6 @@ public class Tunnel : MonoBehaviour
         mesh.vertices = vertices;
     }
 
-    public void AlignWith (Tunnel tunnel)
-    {
-        float relativeRotation = Random.Range(0, curveSegCount) * 360f / tunnelSegCount;
-
-        transform.SetParent(tunnel.transform, false);
-        transform.localPosition = Vector3.zero;
-        transform.localRotation = Quaternion.Euler(0f, 0f, -tunnel.curveAngle);
-        transform.Translate(0f, tunnel.curveRadius, 0f);
-        transform.Rotate(relativeRotation, 0f, 0f);
-        transform.Translate(0f, -curveRadius, 0f);
-        transform.SetParent(tunnel.transform.parent);
-    }
 
     void CreateFirstQuadRing (float u)
     {
@@ -121,5 +105,18 @@ public class Tunnel : MonoBehaviour
             triangles[t + 5] = i + 3;
         }
         mesh.triangles = triangles;
+    }
+
+    public void AlignWith(Tunnel tunnel)
+    {
+        float relativeRotation = Random.Range(0, curveSegCount) * 360f / tunnelSegCount;
+
+        transform.SetParent(tunnel.transform, false);
+        transform.localPosition = Vector3.zero;
+        transform.localRotation = Quaternion.Euler(0f, 0f, -tunnel.curveAngle);
+        transform.Translate(0f, tunnel.curveRadius, 0f);
+        transform.Rotate(relativeRotation, 0f, 0f);
+        transform.Translate(0f, -curveRadius, 0f);
+        transform.SetParent(tunnel.transform.parent);
     }
 }

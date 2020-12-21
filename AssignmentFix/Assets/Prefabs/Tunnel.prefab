@@ -46,7 +46,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tunnelRadius: 1
-  ringDistance: 1
+  ringDistance: 2
   minCurveRadius: 4
   maxCurveRadius: 20
   minCurveSegCount: 4
