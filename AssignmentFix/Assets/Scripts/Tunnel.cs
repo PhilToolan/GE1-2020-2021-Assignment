@@ -20,6 +20,7 @@ public class Tunnel : MonoBehaviour
     private float curveAngle;
     private int curveSegCount;
     private float curveRadius;
+    private float relativeRotation;
 
     //keep private while still allowing access, making them public was causing problems
     public float CurveRadius
@@ -30,16 +31,24 @@ public class Tunnel : MonoBehaviour
     {
         get { return curveAngle; }
     }
+    public float RelativeRotation
+    {
+        get { return relativeRotation; }
+    }
 
     // Start is called before the first frame update
     void Awake()
     {
         GetComponent<MeshFilter>().mesh = mesh = new Mesh();
         mesh.name = "Tunnel";
+    }
 
+    public void Generate()
+    {
         curveRadius = Random.Range(minCurveRadius, maxCurveRadius);
         curveSegCount = Random.Range(minCurveSegCount, maxCurveSegCount + 1);
 
+        mesh.Clear();
         SetVertices();
         SetTriangles();
         mesh.RecalculateNormals();
@@ -119,7 +128,7 @@ public class Tunnel : MonoBehaviour
 
     public void AlignWith(Tunnel tunnel)
     {
-        float relativeRotation = Random.Range(0, curveSegCount) * 360f / tunnelSegCount;
+        relativeRotation = Random.Range(0, curveSegCount) * 360f / tunnelSegCount;
 
         transform.SetParent(tunnel.transform, false);
         transform.localPosition = Vector3.zero;

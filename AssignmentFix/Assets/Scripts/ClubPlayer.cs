@@ -11,10 +11,14 @@ public class ClubPlayer : MonoBehaviour
     private float distanceTraveled;
     private float deltaToRotation;
     private float systemRotation;
+    private Transform world;
+    private float worldRotation;
 
     void Start ()
     {
+        world = tunnelSystem.transform.parent;
         currentTunnel = tunnelSystem.SetupFirstTunnel();
+        SetUpCurrentTunnel();
     }
 
     void Update()
@@ -27,10 +31,25 @@ public class ClubPlayer : MonoBehaviour
         {
             delta = (systemRotation - currentTunnel.CurveAngle) / deltaToRotation;
             currentTunnel = tunnelSystem.SetupNextTunnel();
-            deltaToRotation = 360f / (2f * Mathf.PI * currentTunnel.CurveRadius);
+            SetUpCurrentTunnel();
             systemRotation = delta * deltaToRotation;
         }
 
         tunnelSystem.transform.localRotation = Quaternion.Euler(0f, 0f, systemRotation);
+    }
+
+    void SetUpCurrentTunnel()
+    {
+        deltaToRotation = 360f / (2f * Mathf.PI * currentTunnel.CurveRadius);
+        worldRotation += currentTunnel.RelativeRotation;
+        if (worldRotation < 0f)
+        {
+            worldRotation += 360f;
+        }
+        else if (worldRotation >= 360f)
+        {
+            worldRotation -= 360f;
+        }
+        world.localRotation = Quaternion.Euler(worldRotation, 0f, 0f);
     }
 }
