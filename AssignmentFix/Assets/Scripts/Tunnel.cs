@@ -60,6 +60,11 @@ public class Tunnel : MonoBehaviour
         vertices = new Vector3[tunnelSegCount * curveSegCount * 4];
         float uStep = (2f * Mathf.PI) / curveSegCount;
         CreateFirstQuadRing(uStep);
+        int iDelta = tunnelSegCount * 4;
+        for (int u = 2, i = iDelta; u <= curveSegCount; u++, i += iDelta)
+        {
+            CreateQuadRing(u * uStep, i);
+        }
         mesh.vertices = vertices;
     }
 
@@ -75,6 +80,21 @@ public class Tunnel : MonoBehaviour
             vertices[i + 1] = vertexA = GetPointOnTunnel(0f, v * vStep);
             vertices[i + 2] = vertexB;
             vertices[i + 3] = vertexB = GetPointOnTunnel(u, v * vStep);
+        }
+    }
+
+    void CreateQuadRing(float u, int i)
+    {
+        float vStep = (2f * Mathf.PI) / tunnelSegCount;
+        int ringOffset = tunnelSegCount * 4;
+
+        Vector3 vertex = GetPointOnTunnel(u, 0f);
+        for (int v = 1; v <= tunnelSegCount; v++, i += 4)
+        {
+            vertices[i] = vertices[i - ringOffset + 2];
+            vertices[i + 1] = vertices[i - ringOffset + 3];
+            vertices[i + 2] = vertex;
+            vertices[i + 3] = vertex = GetPointOnTunnel(u, v * vStep);
         }
     }
 
