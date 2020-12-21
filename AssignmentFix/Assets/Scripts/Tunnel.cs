@@ -22,6 +22,7 @@ public class Tunnel : MonoBehaviour
         mesh.name = "Tunnel";
         SetVertices();
         SetTriangles();
+        mesh.RecalculateNormals();
     }
 
     // Update is called once per frame
