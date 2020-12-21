@@ -5,18 +5,20 @@ using UnityEngine;
 
 public class LightChange : MonoBehaviour
 {
-    // Interpolate light color between two colors back and forth
-    float duration = 1.0f;
     Color color0 = Color.red;
     Color color1 = Color.blue;
 
     Light lt;
 
     public int band;
+    private float maxVal;
+    private float audioVal;
+    private float lerpVal;
 
     void Start()
     {
         lt = GetComponent<Light>();
+        lt.color = color1;
         lt.color = color1;
     }
 
@@ -25,13 +27,29 @@ public class LightChange : MonoBehaviour
         // set light color
         //float t = Mathf.PingPong(Time.time, duration) / duration;
         //lt.color = Color.Lerp(color0, color1, t);
+        //audioVal = AudioAnalyzer.bands[band];
 
-        if (AudioAnalyzer.bands[band] > 0.3)
+        //if (audioVal > maxVal)
+        //{
+        //    maxVal = audioVal;
+        //}
+
+        lerpVal = Mathf.Lerp(lerpVal, 1 + (AudioAnalyzer.bands[band] * 3), Time.deltaTime);
+
+        if (lerpVal > 2)
         {
+            //lt.color = color0;
             ChangeColour();
         }
+        //else if (lerpVal < 2)
+        //{
+        //    lt.color = color1;
+        //}
+
 
         //Debug.Log(AudioAnalyzer.bands[band]);
+        //Debug.Log(maxVal);
+        //Debug.Log(lerpVal);
     }
 
     void ChangeColour()
