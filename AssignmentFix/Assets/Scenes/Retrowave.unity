@@ -8301,7 +8301,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   useMic: 0
-  clip: {fileID: 8300000, guid: 80ab51eff93828b419bec6d7e1ff3d73, type: 3}
+  clip: {fileID: 8300000, guid: 5b6c29f801ab7f747b64616c07e574e8, type: 3}
   amgMic: {fileID: 0}
   amgMaster: {fileID: 0}
   selectedDevice: 
