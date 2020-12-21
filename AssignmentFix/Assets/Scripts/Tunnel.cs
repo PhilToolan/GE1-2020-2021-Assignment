@@ -62,7 +62,7 @@ public class Tunnel : MonoBehaviour
 
     public void AlignWith (Tunnel tunnel)
     {
-        float relativeRotation = Random.Range(0f, 360f);
+        float relativeRotation = Random.Range(0, curveSegCount) * 360f / tunnelSegCount;
 
         transform.SetParent(tunnel.transform, false);
         transform.localPosition = Vector3.zero;
