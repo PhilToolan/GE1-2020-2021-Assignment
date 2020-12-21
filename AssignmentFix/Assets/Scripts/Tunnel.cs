@@ -5,24 +5,31 @@ using UnityEngine;
 public class Tunnel : MonoBehaviour
 {
 
-    public float curveRadius;
     public float tunnelRadius;
     public float ringDistance;
-    //
-    public int curveSegCount;
+    public float minCurveRadius;
+    public float maxCurveRadius;
+    public int minCurveSegCount;
+    public int maxCurveSegCount;
     public int tunnelSegCount;
     // mesh
     private Mesh mesh;
     private Vector3[] vertices;
     private int[] triangles;
-
-    float curveAngle;
+    // private variables
+    private float curveAngle;
+    private int curveSegCount;
+    private float curveRadius;
 
     // Start is called before the first frame update
     void Awake()
     {
         GetComponent<MeshFilter>().mesh = mesh = new Mesh();
         mesh.name = "Tunnel";
+
+        curveRadius = Random.Range(minCurveRadius, maxCurveRadius);
+        curveSegCount = Random.Range(minCurveSegCount, maxCurveSegCount);
+
         SetVertices();
         SetTriangles();
         mesh.RecalculateNormals();

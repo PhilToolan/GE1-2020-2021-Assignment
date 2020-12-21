@@ -45,10 +45,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 808ed3ee8f2220740ad5d2e45767b1d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  curveRadius: 4
   tunnelRadius: 1
   ringDistance: 1
-  curveSegCount: 20
+  minCurveRadius: 4
+  maxCurveRadius: 20
+  minCurveSegCount: 4
+  maxCurveSegCount: 10
   tunnelSegCount: 10
 --- !u!33 &7450441798604573159
 MeshFilter:
