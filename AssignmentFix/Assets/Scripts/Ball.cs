@@ -83,7 +83,7 @@ public class Ball : MonoBehaviour
         gameMusic.Stop();
         transform.position = new Vector3(100, 100, 0);
         player.totalScore = 0;
-        text.text = "Game Over !\nPress Space to Replay\nEsc to Quit";
+        text.text = "Game Over !\nSpace to Replay\nEsc for Main Menu";
         audioSource.pitch = 1.0f;
         audioSource.PlayOneShot(hitSound);
         gameOver = true;
