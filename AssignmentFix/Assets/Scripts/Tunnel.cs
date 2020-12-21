@@ -119,8 +119,8 @@ public class Tunnel : MonoBehaviour
         for (int t = 0, i = 0; t < triangles.Length; t += 6, i += 4)
         {
             triangles[t] = i;
-            triangles[t + 1] = triangles[t + 4] = i + 1;
-            triangles[t + 2] = triangles[t + 3] = i + 2;
+            triangles[t + 1] = triangles[t + 4] = i + 2;
+            triangles[t + 2] = triangles[t + 3] = i + 1;
             triangles[t + 5] = i + 3;
         }
         mesh.triangles = triangles;
@@ -137,5 +137,6 @@ public class Tunnel : MonoBehaviour
         transform.Rotate(relativeRotation, 0f, 0f);
         transform.Translate(0f, -curveRadius, 0f);
         transform.SetParent(tunnel.transform.parent);
+        transform.localScale = Vector3.one;
     }
 }
