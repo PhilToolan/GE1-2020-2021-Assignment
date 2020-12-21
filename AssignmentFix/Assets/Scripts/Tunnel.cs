@@ -7,6 +7,7 @@ public class Tunnel : MonoBehaviour
 
     public float curveRadius;
     public float tunnelRadius;
+    public float ringDistance;
     //
     public int curveSegCount;
     public int tunnelSegCount;
@@ -14,6 +15,8 @@ public class Tunnel : MonoBehaviour
     private Mesh mesh;
     private Vector3[] vertices;
     private int[] triangles;
+
+    float curveAngle;
 
     // Start is called before the first frame update
     void Awake()
@@ -41,25 +44,13 @@ public class Tunnel : MonoBehaviour
         return point;
     }
 
-    void OnDrawGizmos ()
-    {
-        float uStep = (2f * Mathf.PI) / curveSegCount;
-        float vStep = (2f * Mathf.PI) / tunnelSegCount;
-        for (int u = 0; u < curveSegCount; u++)
-        {
-            for (int v = 0; v < tunnelSegCount; v++)
-            {
-                Vector3 point = GetPointOnTunnel(u * uStep, v * vStep);
-                Gizmos.DrawSphere(point, 0.1f);
-            }
-        }
-
-    }
 
     void SetVertices()
     {
         vertices = new Vector3[tunnelSegCount * curveSegCount * 4];
-        float uStep = (2f * Mathf.PI) / curveSegCount;
+        //float uStep = (2f * Mathf.PI) / curveSegCount; // Closed tunnel
+        float uStep = ringDistance / curveRadius; // Allow for partial/multi-curved tunnel 
+        curveAngle = uStep * curveSegCount * (360f / (2f * Mathf.PI));
         CreateFirstQuadRing(uStep);
         int iDelta = tunnelSegCount * 4;
         for (int u = 2, i = iDelta; u <= curveSegCount; u++, i += iDelta)
@@ -67,6 +58,11 @@ public class Tunnel : MonoBehaviour
             CreateQuadRing(u * uStep, i);
         }
         mesh.vertices = vertices;
+    }
+
+    public void AlignWith (Tunnel tunnel)
+    {
+        transform.localRotation = Quaternion.Euler(0f, 0f, -tunnel.curveAngle);
     }
 
     void CreateFirstQuadRing (float u)
