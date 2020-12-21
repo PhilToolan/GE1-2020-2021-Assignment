@@ -62,7 +62,15 @@ public class Tunnel : MonoBehaviour
 
     public void AlignWith (Tunnel tunnel)
     {
+        float relativeRotation = Random.Range(0f, 360f);
+
+        transform.SetParent(tunnel.transform, false);
+        transform.localPosition = Vector3.zero;
         transform.localRotation = Quaternion.Euler(0f, 0f, -tunnel.curveAngle);
+        transform.Translate(0f, tunnel.curveRadius, 0f);
+        transform.Rotate(relativeRotation, 0f, 0f);
+        transform.Translate(0f, -curveRadius, 0f);
+        transform.SetParent(tunnel.transform.parent);
     }
 
     void CreateFirstQuadRing (float u)
