@@ -21,6 +21,16 @@ public class Tunnel : MonoBehaviour
     private int curveSegCount;
     private float curveRadius;
 
+    //keep private while still allowing access, making them public was causing problems
+    public float CurveRadius
+    {
+        get { return curveRadius; }
+    }
+    public float CurveAngle
+    {
+        get { return curveAngle; }
+    }
+
     // Start is called before the first frame update
     void Awake()
     {
