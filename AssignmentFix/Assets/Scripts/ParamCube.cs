@@ -7,6 +7,7 @@ public class ParamCube : MonoBehaviour
     public int band;
     public float startScale; 
     public float scaleMultiplier;
+    public Vector3 startPosition;
 
     // Start is called before the first frame update
     void Start()
@@ -20,7 +21,10 @@ public class ParamCube : MonoBehaviour
         Vector3 ls = transform.localScale;
         ls.y = Mathf.Lerp(ls.y, 1 + (AudioAnalyzer.bands[band] * scaleMultiplier), Time.deltaTime * startScale);
         transform.localScale = ls;
+        Vector3 pos = transform.position;
+        pos.y = startPosition.y + (ls.y / 20);
+        transform.position = pos;
         //transform.localScale = new Vector3(transform.localScale.x, Mathf.Lerp(1 + (AudioAnalyzer.bands[band] * scaleMultiplier) + startScale * Time.deltaTime * 3.0), transform.localScale.z);
-            //(AudioAnalyzer.bands[band] * scaleMultiplier) + startScale
+        //(AudioAnalyzer.bands[band] * scaleMultiplier) + startScale
     }
 }
