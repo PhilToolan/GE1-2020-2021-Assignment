@@ -2,10 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TunnelPlayer : MonoBehaviour
+public class ClubPlayer : MonoBehaviour
 {
     public TunnelSystem tunnelSystem;
     public float speed;
+    public Transform target1;
+    public Transform target2;
+    public bool viz1 = true;
+    public float rotSpeed;
 
     private Tunnel currentTunnel;
     private float distanceTraveled;
@@ -13,12 +17,15 @@ public class TunnelPlayer : MonoBehaviour
     private float systemRotation;
     private Transform world;
     private float worldRotation;
+    private Vector3 cameraPosition;
 
     void Start ()
     {
         world = tunnelSystem.transform.parent;
         currentTunnel = tunnelSystem.SetupFirstTunnel();
+        cameraPosition = this.transform.position;
         SetUpCurrentTunnel();
+        LookAtVisual();
     }
 
     void Update()
@@ -51,5 +58,26 @@ public class TunnelPlayer : MonoBehaviour
             worldRotation -= 360f;
         }
         world.localRotation = Quaternion.Euler(worldRotation, 0f, 0f);
+    }
+
+    void LookAtVisual()
+    {
+        if (viz1 == true)
+        {
+            viz1 = false;
+            Vector3 toTarget = target1.transform.position - transform.position;
+
+
+            transform.rotation = Quaternion.RotateTowards(transform.rotation, Quaternion.LookRotation(toTarget), rotSpeed * Time.deltaTime);
+        }
+
+        if (viz1 == false)
+        {
+            viz1 = true;
+            Vector3 toTarget = target2.transform.position - transform.position;
+
+
+            transform.rotation = Quaternion.RotateTowards(transform.rotation, Quaternion.LookRotation(toTarget), rotSpeed * Time.deltaTime);
+        }
     }
 }
