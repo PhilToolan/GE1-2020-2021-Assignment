@@ -38,13 +38,13 @@ public class LightChange : MonoBehaviour
 
         if (lerpVal > 2)
         {
-            //lt.color = color0;
-            ChangeColour();
+            lt.color = color0;
+            //ChangeColour();
         }
-        //else if (lerpVal < 2)
-        //{
-        //    lt.color = color1;
-        //}
+        else if (lerpVal < 2)
+        {
+            lt.color = color1;
+        }
 
 
         //Debug.Log(AudioAnalyzer.bands[band]);

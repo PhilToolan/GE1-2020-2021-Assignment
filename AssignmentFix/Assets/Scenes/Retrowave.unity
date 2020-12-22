@@ -170,7 +170,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   band: 4
-  startScale: 3
   scaleMultiplier: 100
 --- !u!65 &568212
 BoxCollider:
@@ -281,7 +280,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   band: 4
-  startScale: 3
   scaleMultiplier: 100
 --- !u!65 &19362769
 BoxCollider:
@@ -392,7 +390,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   band: 5
-  startScale: 3
   scaleMultiplier: 100
 --- !u!65 &21651487
 BoxCollider:
@@ -503,7 +500,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   band: 6
-  startScale: 3
   scaleMultiplier: 100
 --- !u!65 &42020444
 BoxCollider:
@@ -614,7 +610,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   band: 1
-  startScale: 3
   scaleMultiplier: 100
 --- !u!65 &51083871
 BoxCollider:
@@ -725,7 +720,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   band: 6
-  startScale: 3
   scaleMultiplier: 100
 --- !u!65 &53493947
 BoxCollider:
@@ -836,7 +830,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   band: 5
-  startScale: 3
   scaleMultiplier: 100
 --- !u!65 &53542191
 BoxCollider:
@@ -947,7 +940,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   band: 6
-  startScale: 3
   scaleMultiplier: 100
 --- !u!65 &61117310
 BoxCollider:
@@ -1176,7 +1168,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   band: 1
-  startScale: 3
   scaleMultiplier: 100
 --- !u!65 &107753764
 BoxCollider:
@@ -1398,7 +1389,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   band: 0
-  startScale: 3
   scaleMultiplier: 100
 --- !u!65 &137175426
 BoxCollider:
@@ -1509,7 +1499,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   band: 6
-  startScale: 3
   scaleMultiplier: 100
 --- !u!65 &153023495
 BoxCollider:
@@ -1620,7 +1609,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   band: 4
-  startScale: 3
   scaleMultiplier: 100
 --- !u!65 &186324296
 BoxCollider:
@@ -1731,7 +1719,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   band: 4
-  startScale: 3
   scaleMultiplier: 100
 --- !u!65 &190820182
 BoxCollider:
@@ -1842,7 +1829,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   band: 3
-  startScale: 3
   scaleMultiplier: 100
 --- !u!65 &193598287
 BoxCollider:
@@ -1953,7 +1939,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   band: 4
-  startScale: 3
   scaleMultiplier: 100
 --- !u!65 &198282783
 BoxCollider:
@@ -2101,7 +2086,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   band: 0
-  startScale: 3
   scaleMultiplier: 100
 --- !u!65 &210859544
 BoxCollider:
@@ -2212,7 +2196,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   band: 5
-  startScale: 3
   scaleMultiplier: 100
 --- !u!65 &218538683
 BoxCollider:
@@ -2323,7 +2306,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   band: 0
-  startScale: 3
   scaleMultiplier: 100
 --- !u!65 &223426535
 BoxCollider:
@@ -2434,7 +2416,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   band: 0
-  startScale: 3
   scaleMultiplier: 100
 --- !u!65 &224754753
 BoxCollider:
@@ -2593,7 +2574,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   band: 4
-  startScale: 3
   scaleMultiplier: 100
 --- !u!65 &232553948
 BoxCollider:
@@ -2704,7 +2684,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   band: 3
-  startScale: 3
   scaleMultiplier: 100
 --- !u!65 &240360298
 BoxCollider:
@@ -2815,7 +2794,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   band: 1
-  startScale: 3
   scaleMultiplier: 100
 --- !u!65 &277954262
 BoxCollider:
@@ -2926,7 +2904,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   band: 6
-  startScale: 3
   scaleMultiplier: 100
 --- !u!65 &280599193
 BoxCollider:
@@ -3037,7 +3014,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   band: 5
-  startScale: 3
   scaleMultiplier: 100
 --- !u!65 &284520525
 BoxCollider:
@@ -3148,7 +3124,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   band: 6
-  startScale: 3
   scaleMultiplier: 100
 --- !u!65 &302280330
 BoxCollider:
@@ -3259,7 +3234,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   band: 3
-  startScale: 3
   scaleMultiplier: 100
 --- !u!65 &349612650
 BoxCollider:
@@ -3370,7 +3344,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   band: 3
-  startScale: 3
   scaleMultiplier: 100
 --- !u!65 &358156294
 BoxCollider:
@@ -3518,7 +3491,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   band: 1
-  startScale: 3
   scaleMultiplier: 100
 --- !u!65 &405742103
 BoxCollider:
@@ -3666,7 +3638,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   band: 1
-  startScale: 3
   scaleMultiplier: 100
 --- !u!65 &428494359
 BoxCollider:
@@ -3814,7 +3785,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   band: 2
-  startScale: 3
   scaleMultiplier: 100
 --- !u!65 &433679275
 BoxCollider:
@@ -4017,7 +3987,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   band: 3
-  startScale: 3
   scaleMultiplier: 100
 --- !u!65 &491355138
 BoxCollider:
@@ -4128,7 +4097,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   band: 3
-  startScale: 3
   scaleMultiplier: 100
 --- !u!65 &492088446
 BoxCollider:
@@ -4239,7 +4207,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   band: 6
-  startScale: 3
   scaleMultiplier: 100
 --- !u!65 &498243648
 BoxCollider:
@@ -4350,7 +4317,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   band: 6
-  startScale: 3
   scaleMultiplier: 100
 --- !u!65 &518573629
 BoxCollider:
@@ -4461,7 +4427,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   band: 6
-  startScale: 3
   scaleMultiplier: 100
 --- !u!65 &526388894
 BoxCollider:
@@ -4572,7 +4537,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   band: 3
-  startScale: 3
   scaleMultiplier: 100
 --- !u!65 &530088612
 BoxCollider:
@@ -4683,7 +4647,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   band: 0
-  startScale: 3
   scaleMultiplier: 100
 --- !u!65 &535866757
 BoxCollider:
@@ -4794,7 +4757,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   band: 4
-  startScale: 3
   scaleMultiplier: 100
 --- !u!65 &563285732
 BoxCollider:
@@ -4905,7 +4867,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   band: 0
-  startScale: 3
   scaleMultiplier: 100
 --- !u!65 &565456926
 BoxCollider:
@@ -5016,7 +4977,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   band: 4
-  startScale: 3
   scaleMultiplier: 100
 --- !u!65 &570409663
 BoxCollider:
@@ -5127,7 +5087,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   band: 2
-  startScale: 3
   scaleMultiplier: 100
 --- !u!65 &572576994
 BoxCollider:
@@ -5238,7 +5197,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   band: 4
-  startScale: 3
   scaleMultiplier: 100
 --- !u!65 &585035412
 BoxCollider:
@@ -5349,7 +5307,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   band: 4
-  startScale: 3
   scaleMultiplier: 100
 --- !u!65 &602488460
 BoxCollider:
@@ -5460,7 +5417,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   band: 2
-  startScale: 3
   scaleMultiplier: 100
 --- !u!65 &624415437
 BoxCollider:
@@ -5571,7 +5527,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   band: 6
-  startScale: 3
   scaleMultiplier: 100
 --- !u!65 &626125096
 BoxCollider:
@@ -5682,7 +5637,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   band: 5
-  startScale: 3
   scaleMultiplier: 100
 --- !u!65 &633646628
 BoxCollider:
@@ -5793,7 +5747,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   band: 1
-  startScale: 3
   scaleMultiplier: 100
 --- !u!65 &665633109
 BoxCollider:
@@ -5904,7 +5857,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   band: 2
-  startScale: 3
   scaleMultiplier: 100
 --- !u!65 &677634944
 BoxCollider:
@@ -6015,7 +5967,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   band: 1
-  startScale: 3
   scaleMultiplier: 100
 --- !u!65 &682323830
 BoxCollider:
@@ -6126,7 +6077,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   band: 2
-  startScale: 3
   scaleMultiplier: 100
 --- !u!65 &684108929
 BoxCollider:
@@ -6237,7 +6187,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   band: 2
-  startScale: 3
   scaleMultiplier: 100
 --- !u!65 &688404151
 BoxCollider:
@@ -6348,7 +6297,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   band: 2
-  startScale: 3
   scaleMultiplier: 100
 --- !u!65 &688734182
 BoxCollider:
@@ -6709,7 +6657,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   band: 2
-  startScale: 3
   scaleMultiplier: 100
 --- !u!65 &746258910
 BoxCollider:
@@ -6820,7 +6767,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   band: 5
-  startScale: 3
   scaleMultiplier: 100
 --- !u!65 &768998836
 BoxCollider:
@@ -6968,7 +6914,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   band: 2
-  startScale: 3
   scaleMultiplier: 100
 --- !u!65 &796668540
 BoxCollider:
@@ -7079,7 +7024,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   band: 4
-  startScale: 3
   scaleMultiplier: 100
 --- !u!65 &826556076
 BoxCollider:
@@ -7190,7 +7134,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   band: 2
-  startScale: 3
   scaleMultiplier: 100
 --- !u!65 &829396207
 BoxCollider:
@@ -7301,7 +7244,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   band: 5
-  startScale: 3
   scaleMultiplier: 100
 --- !u!65 &836194841
 BoxCollider:
@@ -7412,7 +7354,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   band: 2
-  startScale: 3
   scaleMultiplier: 100
 --- !u!65 &836441509
 BoxCollider:
@@ -7651,7 +7592,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   band: 3
-  startScale: 3
   scaleMultiplier: 100
 --- !u!65 &855380432
 BoxCollider:
@@ -7762,7 +7702,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   band: 4
-  startScale: 3
   scaleMultiplier: 100
 --- !u!65 &861583297
 BoxCollider:
@@ -7873,7 +7812,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   band: 6
-  startScale: 3
   scaleMultiplier: 100
 --- !u!65 &867522165
 BoxCollider:
@@ -7984,7 +7922,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   band: 0
-  startScale: 3
   scaleMultiplier: 100
 --- !u!65 &873970618
 BoxCollider:
@@ -8079,7 +8016,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   useMic: 0
-  clip: {fileID: 8300000, guid: 5b6c29f801ab7f747b64616c07e574e8, type: 3}
+  clip: {fileID: 8300000, guid: 80ab51eff93828b419bec6d7e1ff3d73, type: 3}
   amgMic: {fileID: 0}
   amgMaster: {fileID: 0}
   selectedDevice: 
@@ -8371,7 +8308,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   band: 4
-  startScale: 3
   scaleMultiplier: 100
 --- !u!65 &886860092
 BoxCollider:
@@ -8533,7 +8469,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   band: 2
-  startScale: 3
   scaleMultiplier: 100
 --- !u!65 &894643329
 BoxCollider:
@@ -8644,7 +8579,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   band: 0
-  startScale: 3
   scaleMultiplier: 100
 --- !u!65 &933078691
 BoxCollider:
@@ -8755,7 +8689,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   band: 3
-  startScale: 3
   scaleMultiplier: 100
 --- !u!65 &937218374
 BoxCollider:
@@ -8908,7 +8841,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   band: 3
-  startScale: 3
   scaleMultiplier: 100
 --- !u!65 &975496804
 BoxCollider:
@@ -9019,7 +8951,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   band: 1
-  startScale: 3
   scaleMultiplier: 100
 --- !u!65 &975887878
 BoxCollider:
@@ -9130,7 +9061,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   band: 4
-  startScale: 3
   scaleMultiplier: 100
 --- !u!65 &983149473
 BoxCollider:
@@ -9278,7 +9208,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   band: 2
-  startScale: 3
   scaleMultiplier: 100
 --- !u!65 &1006088238
 BoxCollider:
@@ -9389,7 +9318,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   band: 0
-  startScale: 3
   scaleMultiplier: 100
 --- !u!65 &1023216683
 BoxCollider:
@@ -9500,7 +9428,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   band: 0
-  startScale: 3
   scaleMultiplier: 100
 --- !u!65 &1028478391
 BoxCollider:
@@ -9611,7 +9538,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   band: 6
-  startScale: 3
   scaleMultiplier: 100
 --- !u!65 &1032058559
 BoxCollider:
@@ -9722,7 +9648,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   band: 1
-  startScale: 3
   scaleMultiplier: 100
 --- !u!65 &1033002849
 BoxCollider:
@@ -9833,7 +9758,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   band: 3
-  startScale: 3
   scaleMultiplier: 100
 --- !u!65 &1037881410
 BoxCollider:
@@ -9944,7 +9868,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   band: 4
-  startScale: 3
   scaleMultiplier: 100
 --- !u!65 &1058799844
 BoxCollider:
@@ -10055,7 +9978,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   band: 3
-  startScale: 3
   scaleMultiplier: 100
 --- !u!65 &1064195816
 BoxCollider:
@@ -10166,7 +10088,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   band: 1
-  startScale: 3
   scaleMultiplier: 100
 --- !u!65 &1068349478
 BoxCollider:
@@ -10314,7 +10235,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   band: 4
-  startScale: 3
   scaleMultiplier: 100
 --- !u!65 &1074681976
 BoxCollider:
@@ -10425,7 +10345,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   band: 2
-  startScale: 3
   scaleMultiplier: 100
 --- !u!65 &1075071232
 BoxCollider:
@@ -10536,7 +10455,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   band: 1
-  startScale: 3
   scaleMultiplier: 100
 --- !u!65 &1091852159
 BoxCollider:
@@ -10647,7 +10565,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   band: 5
-  startScale: 3
   scaleMultiplier: 100
 --- !u!65 &1095767224
 BoxCollider:
@@ -10758,7 +10675,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   band: 1
-  startScale: 3
   scaleMultiplier: 100
 --- !u!65 &1099395505
 BoxCollider:
@@ -10869,7 +10785,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   band: 0
-  startScale: 3
   scaleMultiplier: 100
 --- !u!65 &1119905826
 BoxCollider:
@@ -11014,7 +10929,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   band: 2
-  startScale: 3
   scaleMultiplier: 100
 --- !u!65 &1121662030
 BoxCollider:
@@ -11125,7 +11039,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   band: 0
-  startScale: 3
   scaleMultiplier: 100
 --- !u!65 &1134047480
 BoxCollider:
@@ -11236,7 +11149,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   band: 5
-  startScale: 3
   scaleMultiplier: 100
 --- !u!65 &1139280161
 BoxCollider:
@@ -11347,7 +11259,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   band: 5
-  startScale: 3
   scaleMultiplier: 100
 --- !u!65 &1140604393
 BoxCollider:
@@ -11458,7 +11369,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   band: 2
-  startScale: 3
   scaleMultiplier: 100
 --- !u!65 &1148125255
 BoxCollider:
@@ -11606,7 +11516,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   band: 1
-  startScale: 3
   scaleMultiplier: 100
 --- !u!65 &1177295545
 BoxCollider:
@@ -11772,7 +11681,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   band: 4
-  startScale: 3
   scaleMultiplier: 100
 --- !u!65 &1211656639
 BoxCollider:
@@ -11883,7 +11791,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   band: 5
-  startScale: 3
   scaleMultiplier: 100
 --- !u!65 &1213952421
 BoxCollider:
@@ -11994,7 +11901,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   band: 5
-  startScale: 3
   scaleMultiplier: 100
 --- !u!65 &1216421340
 BoxCollider:
@@ -12142,7 +12048,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   band: 3
-  startScale: 3
   scaleMultiplier: 100
 --- !u!65 &1219539354
 BoxCollider:
@@ -12253,7 +12158,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   band: 6
-  startScale: 3
   scaleMultiplier: 100
 --- !u!65 &1221986596
 BoxCollider:
@@ -12364,7 +12268,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   band: 1
-  startScale: 3
   scaleMultiplier: 100
 --- !u!65 &1224481312
 BoxCollider:
@@ -12475,7 +12378,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   band: 3
-  startScale: 3
   scaleMultiplier: 100
 --- !u!65 &1229570824
 BoxCollider:
@@ -12623,7 +12525,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   band: 0
-  startScale: 3
   scaleMultiplier: 100
 --- !u!65 &1236280759
 BoxCollider:
@@ -12771,7 +12672,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   band: 0
-  startScale: 3
   scaleMultiplier: 100
 --- !u!65 &1255869547
 BoxCollider:
@@ -12882,7 +12782,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   band: 1
-  startScale: 3
   scaleMultiplier: 100
 --- !u!65 &1270835280
 BoxCollider:
@@ -13060,7 +12959,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   band: 5
-  startScale: 3
   scaleMultiplier: 100
 --- !u!65 &1285672943
 BoxCollider:
@@ -13171,7 +13069,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   band: 1
-  startScale: 3
   scaleMultiplier: 100
 --- !u!65 &1286773836
 BoxCollider:
@@ -13282,7 +13179,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   band: 3
-  startScale: 3
   scaleMultiplier: 100
 --- !u!65 &1302001039
 BoxCollider:
@@ -13393,7 +13289,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   band: 5
-  startScale: 3
   scaleMultiplier: 100
 --- !u!65 &1308602189
 BoxCollider:
@@ -13504,7 +13399,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   band: 0
-  startScale: 3
   scaleMultiplier: 100
 --- !u!65 &1333597740
 BoxCollider:
@@ -13615,7 +13509,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   band: 6
-  startScale: 3
   scaleMultiplier: 100
 --- !u!65 &1340672476
 BoxCollider:
@@ -13726,7 +13619,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   band: 4
-  startScale: 3
   scaleMultiplier: 100
 --- !u!65 &1344192688
 BoxCollider:
@@ -13837,7 +13729,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   band: 5
-  startScale: 3
   scaleMultiplier: 100
 --- !u!65 &1349549220
 BoxCollider:
@@ -13948,7 +13839,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   band: 2
-  startScale: 3
   scaleMultiplier: 100
 --- !u!65 &1352318796
 BoxCollider:
@@ -14059,7 +13949,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   band: 1
-  startScale: 3
   scaleMultiplier: 100
 --- !u!65 &1374855387
 BoxCollider:
@@ -14170,7 +14059,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   band: 3
-  startScale: 3
   scaleMultiplier: 100
 --- !u!65 &1385622250
 BoxCollider:
@@ -14281,7 +14169,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   band: 6
-  startScale: 3
   scaleMultiplier: 100
 --- !u!65 &1393549465
 BoxCollider:
@@ -14392,7 +14279,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   band: 0
-  startScale: 3
   scaleMultiplier: 100
 --- !u!65 &1393651291
 BoxCollider:
@@ -14503,7 +14389,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   band: 3
-  startScale: 3
   scaleMultiplier: 100
 --- !u!65 &1394170899
 BoxCollider:
@@ -14614,7 +14499,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   band: 5
-  startScale: 3
   scaleMultiplier: 100
 --- !u!65 &1421480151
 BoxCollider:
@@ -14725,7 +14609,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   band: 3
-  startScale: 3
   scaleMultiplier: 100
 --- !u!65 &1458845793
 BoxCollider:
@@ -14836,7 +14719,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   band: 2
-  startScale: 3
   scaleMultiplier: 100
 --- !u!65 &1460110403
 BoxCollider:
@@ -14947,7 +14829,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   band: 1
-  startScale: 3
   scaleMultiplier: 100
 --- !u!65 &1494191351
 BoxCollider:
@@ -15058,7 +14939,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   band: 3
-  startScale: 3
   scaleMultiplier: 100
 --- !u!65 &1509635882
 BoxCollider:
@@ -15169,7 +15049,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   band: 5
-  startScale: 3
   scaleMultiplier: 100
 --- !u!65 &1512024269
 BoxCollider:
@@ -15280,7 +15159,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   band: 2
-  startScale: 3
   scaleMultiplier: 100
 --- !u!65 &1512983219
 BoxCollider:
@@ -15391,7 +15269,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   band: 1
-  startScale: 3
   scaleMultiplier: 100
 --- !u!65 &1534453453
 BoxCollider:
@@ -15583,7 +15460,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   band: 6
-  startScale: 3
   scaleMultiplier: 100
 --- !u!65 &1554498836
 BoxCollider:
@@ -15694,7 +15570,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   band: 6
-  startScale: 3
   scaleMultiplier: 100
 --- !u!65 &1556299932
 BoxCollider:
@@ -15805,7 +15680,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   band: 1
-  startScale: 3
   scaleMultiplier: 100
 --- !u!65 &1562471159
 BoxCollider:
@@ -15916,7 +15790,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   band: 5
-  startScale: 3
   scaleMultiplier: 100
 --- !u!65 &1570528587
 BoxCollider:
@@ -16109,7 +15982,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   band: 0
-  startScale: 3
   scaleMultiplier: 100
 --- !u!65 &1583314563
 BoxCollider:
@@ -16220,7 +16092,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   band: 2
-  startScale: 3
   scaleMultiplier: 100
 --- !u!65 &1587356205
 BoxCollider:
@@ -16331,7 +16202,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   band: 4
-  startScale: 3
   scaleMultiplier: 100
 --- !u!65 &1589399902
 BoxCollider:
@@ -16597,7 +16467,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   band: 6
-  startScale: 3
   scaleMultiplier: 100
 --- !u!65 &1657694808
 BoxCollider:
@@ -16708,7 +16577,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   band: 3
-  startScale: 3
   scaleMultiplier: 100
 --- !u!65 &1689410376
 BoxCollider:
@@ -16819,7 +16687,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   band: 5
-  startScale: 3
   scaleMultiplier: 100
 --- !u!65 &1693057096
 BoxCollider:
@@ -16930,7 +16797,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   band: 3
-  startScale: 3
   scaleMultiplier: 100
 --- !u!65 &1694030095
 BoxCollider:
@@ -17078,7 +16944,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   band: 6
-  startScale: 3
   scaleMultiplier: 100
 --- !u!65 &1711694017
 BoxCollider:
@@ -17189,7 +17054,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   band: 5
-  startScale: 3
   scaleMultiplier: 100
 --- !u!65 &1712555240
 BoxCollider:
@@ -17300,7 +17164,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   band: 4
-  startScale: 3
   scaleMultiplier: 100
 --- !u!65 &1718357556
 BoxCollider:
@@ -17411,7 +17274,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   band: 0
-  startScale: 3
   scaleMultiplier: 100
 --- !u!65 &1727242785
 BoxCollider:
@@ -17522,7 +17384,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   band: 6
-  startScale: 3
   scaleMultiplier: 100
 --- !u!65 &1728783642
 BoxCollider:
@@ -17633,7 +17494,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   band: 1
-  startScale: 3
   scaleMultiplier: 100
 --- !u!65 &1732248529
 BoxCollider:
@@ -17744,7 +17604,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   band: 6
-  startScale: 3
   scaleMultiplier: 100
 --- !u!65 &1745835276
 BoxCollider:
@@ -17855,7 +17714,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   band: 4
-  startScale: 3
   scaleMultiplier: 100
 --- !u!65 &1749110806
 BoxCollider:
@@ -17966,7 +17824,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   band: 2
-  startScale: 3
   scaleMultiplier: 100
 --- !u!65 &1765210880
 BoxCollider:
@@ -18077,7 +17934,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   band: 6
-  startScale: 3
   scaleMultiplier: 100
 --- !u!65 &1771657986
 BoxCollider:
@@ -18188,7 +18044,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   band: 1
-  startScale: 3
   scaleMultiplier: 100
 --- !u!65 &1808194161
 BoxCollider:
@@ -18299,7 +18154,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   band: 3
-  startScale: 3
   scaleMultiplier: 100
 --- !u!65 &1828669427
 BoxCollider:
@@ -18447,7 +18301,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   band: 3
-  startScale: 3
   scaleMultiplier: 100
 --- !u!65 &1849342731
 BoxCollider:
@@ -18558,7 +18411,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   band: 2
-  startScale: 3
   scaleMultiplier: 100
 --- !u!65 &1853467353
 BoxCollider:
@@ -18669,7 +18521,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   band: 4
-  startScale: 3
   scaleMultiplier: 100
 --- !u!65 &1861488754
 BoxCollider:
@@ -18780,7 +18631,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   band: 5
-  startScale: 3
   scaleMultiplier: 100
 --- !u!65 &1895134995
 BoxCollider:
@@ -18891,7 +18741,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   band: 0
-  startScale: 3
   scaleMultiplier: 100
 --- !u!65 &1915442092
 BoxCollider:
@@ -19002,7 +18851,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   band: 2
-  startScale: 3
   scaleMultiplier: 100
 --- !u!65 &1915923478
 BoxCollider:
@@ -19113,7 +18961,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   band: 5
-  startScale: 3
   scaleMultiplier: 100
 --- !u!65 &1918394715
 BoxCollider:
@@ -19224,7 +19071,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   band: 6
-  startScale: 3
   scaleMultiplier: 100
 --- !u!65 &1936841489
 BoxCollider:
@@ -19416,7 +19262,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   band: 0
-  startScale: 3
   scaleMultiplier: 100
 --- !u!65 &1953929538
 BoxCollider:
@@ -19527,7 +19372,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   band: 4
-  startScale: 3
   scaleMultiplier: 100
 --- !u!65 &1957975007
 BoxCollider:
@@ -19638,7 +19482,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   band: 0
-  startScale: 3
   scaleMultiplier: 100
 --- !u!65 &1971391444
 BoxCollider:
@@ -19749,7 +19592,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   band: 2
-  startScale: 3
   scaleMultiplier: 100
 --- !u!65 &1980221744
 BoxCollider:
@@ -19860,7 +19702,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   band: 3
-  startScale: 3
   scaleMultiplier: 100
 --- !u!65 &2013564238
 BoxCollider:
@@ -20008,7 +19849,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   band: 5
-  startScale: 3
   scaleMultiplier: 100
 --- !u!65 &2028010452
 BoxCollider:
@@ -20119,7 +19959,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   band: 0
-  startScale: 3
   scaleMultiplier: 100
 --- !u!65 &2030669806
 BoxCollider:
@@ -20230,7 +20069,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   band: 0
-  startScale: 3
   scaleMultiplier: 100
 --- !u!65 &2044178118
 BoxCollider:
@@ -20341,7 +20179,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   band: 0
-  startScale: 3
   scaleMultiplier: 100
 --- !u!65 &2096344331
 BoxCollider:
@@ -20452,7 +20289,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   band: 1
-  startScale: 3
   scaleMultiplier: 100
 --- !u!65 &2117794333
 BoxCollider:
@@ -20563,7 +20399,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   band: 4
-  startScale: 3
   scaleMultiplier: 100
 --- !u!65 &2125441353
 BoxCollider:
@@ -20803,7 +20638,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   band: 5
-  startScale: 3
   scaleMultiplier: 100
 --- !u!65 &2141025758
 BoxCollider:
@@ -20914,7 +20748,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   band: 1
-  startScale: 3
   scaleMultiplier: 100
 --- !u!65 &2144694672
 BoxCollider:
@@ -21025,7 +20858,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   band: 6
-  startScale: 3
   scaleMultiplier: 100
 --- !u!65 &2145096529
 BoxCollider:
@@ -21096,6 +20928,30 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1197075265}
     m_Modifications:
+    - target: {fileID: 8830650086444362955, guid: fa51352bb7999da4ca6b948c4c3bedad, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8830650086661838081, guid: fa51352bb7999da4ca6b948c4c3bedad, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8830650086672755313, guid: fa51352bb7999da4ca6b948c4c3bedad, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8830650087281996322, guid: fa51352bb7999da4ca6b948c4c3bedad, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8830650087941419454, guid: fa51352bb7999da4ca6b948c4c3bedad, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8830650088189504019, guid: fa51352bb7999da4ca6b948c4c3bedad, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8830650088381630090, guid: fa51352bb7999da4ca6b948c4c3bedad, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -21143,6 +20999,10 @@ PrefabInstance:
     - target: {fileID: 8830650088381630101, guid: fa51352bb7999da4ca6b948c4c3bedad, type: 3}
       propertyPath: m_Name
       value: Audio Visualizer
+      objectReference: {fileID: 0}
+    - target: {fileID: 8830650088407364922, guid: fa51352bb7999da4ca6b948c4c3bedad, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fa51352bb7999da4ca6b948c4c3bedad, type: 3}
