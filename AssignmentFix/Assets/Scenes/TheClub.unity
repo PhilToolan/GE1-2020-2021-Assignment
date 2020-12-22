@@ -305,7 +305,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tunnelPrefab: {fileID: 7450441798604573154, guid: f27a4a6c28a350f49a68f555413f6828, type: 3}
-  tunnelCount: 4
+  tunnelCount: 6
 --- !u!4 &613224209
 Transform:
   m_ObjectHideFlags: 0
