@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ClubPlayer : MonoBehaviour
+public class TunnelPlayer : MonoBehaviour
 {
     public TunnelSystem tunnelSystem;
     public float speed;

@@ -46,12 +46,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tunnelRadius: 1
-  ringDistance: 2
+  ringDistance: 0.77
   minCurveRadius: 4
   maxCurveRadius: 20
   minCurveSegCount: 4
   maxCurveSegCount: 10
-  tunnelSegCount: 10
+  tunnelSegCount: 16
 --- !u!33 &7450441798604573159
 MeshFilter:
   m_ObjectHideFlags: 0
