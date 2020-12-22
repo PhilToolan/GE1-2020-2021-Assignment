@@ -34,12 +34,12 @@ public class LightChange : MonoBehaviour
 
         lerpVal = Mathf.Lerp(lerpVal, 1 + (AudioAnalyzer.bands[band] * 3), Time.deltaTime);
 
-        if (lerpVal > 2.2)
+        if (lerpVal > 1.3)
         {
             lt.color = color0;
             //ChangeColour();
         }
-        else if (lerpVal < 2.2)
+        else if (lerpVal < 1.3)
         {
             lt.color = color1;
         }
