@@ -43,6 +43,11 @@ public class ClubPlayer : MonoBehaviour
         }
 
         tunnelSystem.transform.localRotation = Quaternion.Euler(0f, 0f, systemRotation);
+
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            LookAtVisual();
+        }
     }
 
     void SetUpCurrentTunnel()
@@ -69,6 +74,7 @@ public class ClubPlayer : MonoBehaviour
 
 
             transform.rotation = Quaternion.RotateTowards(transform.rotation, Quaternion.LookRotation(toTarget), rotSpeed * Time.deltaTime);
+            speed = 0;
         }
 
         if (viz1 == false)
@@ -78,6 +84,7 @@ public class ClubPlayer : MonoBehaviour
 
 
             transform.rotation = Quaternion.RotateTowards(transform.rotation, Quaternion.LookRotation(toTarget), rotSpeed * Time.deltaTime);
+            speed = 5;
         }
     }
 }
