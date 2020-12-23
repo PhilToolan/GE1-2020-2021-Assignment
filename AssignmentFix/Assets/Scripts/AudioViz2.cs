@@ -5,8 +5,6 @@ using UnityEngine;
 public class AudioViz2 : MonoBehaviour
 {
     public AudioAnalyzer audioAnalyzer;
-    //private Material trailMat;
-    //public Color trailColor;
 
     public float degree, scale;
     public int numberStart;
@@ -24,7 +22,6 @@ public class AudioViz2 : MonoBehaviour
 
     private int number;
     private int currentIteration;
-    //private TrailRenderer trailRenderer;
     private Vector2 CalculatePhyllotaxis(float degree, float scale, int number)
     {
         double angle = number * (degree * Mathf.Deg2Rad);
@@ -68,10 +65,6 @@ public class AudioViz2 : MonoBehaviour
     {
         currentScale = scale;
         forward = true;
-        //trailRenderer = GetComponent<TrailRenderer>();
-        //trailMat = new Material(trailRenderer.material);
-        //trailMat.SetColor("TintColor", trailColor);
-        //trailRenderer.material = trailMat;
         number = numberStart;
         transform.localPosition = CalculatePhyllotaxis(degree, currentScale, number);
         if (useLerping)
