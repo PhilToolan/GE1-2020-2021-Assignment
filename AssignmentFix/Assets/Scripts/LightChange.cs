@@ -27,19 +27,21 @@ public class LightChange : MonoBehaviour
         //lt.color = Color.Lerp(color0, color1, t);
         //audioVal = AudioAnalyzer.bands[band];
 
-        //if (audioVal > maxVal)
-        //{
-        //    maxVal = audioVal;
-        //}
+
 
         lerpVal = Mathf.Lerp(lerpVal, 1 + (AudioAnalyzer.bands[band] * 3), Time.deltaTime);
 
-        if (lerpVal > 1.3)
+        if (lerpVal > maxVal)
+        {
+            maxVal = lerpVal;
+        }
+
+        if (lerpVal > 1.93)
         {
             lt.color = color0;
             //ChangeColour();
         }
-        else if (lerpVal < 1.3)
+        else if (lerpVal < 1.93)
         {
             lt.color = color1;
         }
@@ -47,7 +49,7 @@ public class LightChange : MonoBehaviour
 
         //Debug.Log(AudioAnalyzer.bands[band]);
         //Debug.Log(maxVal);
-        //Debug.Log(lerpVal);
+        Debug.Log(lerpVal);
     }
 
     void ChangeColour()
