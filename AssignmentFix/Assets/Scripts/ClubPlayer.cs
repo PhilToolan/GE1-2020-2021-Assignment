@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ClubPlayer : MonoBehaviour
 {
@@ -14,11 +15,14 @@ public class ClubPlayer : MonoBehaviour
     private Transform world;
     private float worldRotation;
 
+    [SerializeField] private string menu;
+
     void Start()
     {
         world = tunnelSystem.transform.parent;
         currentTunnel = tunnelSystem.SetupFirstTunnel();
         SetUpCurrentTunnel();
+        Cursor.visible = false;
     }
 
     void Update()
@@ -36,6 +40,12 @@ public class ClubPlayer : MonoBehaviour
         }
 
         tunnelSystem.transform.localRotation = Quaternion.Euler(0f, 0f, systemRotation);
+
+        if (Input.GetKey(KeyCode.Escape))
+        {
+            Cursor.visible = true;
+            SceneManager.LoadScene(menu);
+        }
 
     }
 

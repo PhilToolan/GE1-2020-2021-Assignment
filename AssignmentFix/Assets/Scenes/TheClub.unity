@@ -383,6 +383,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tunnelSystem: {fileID: 613224208}
   speed: 5
+  menu: MainMenu
 --- !u!4 &462505689
 Transform:
   m_ObjectHideFlags: 0

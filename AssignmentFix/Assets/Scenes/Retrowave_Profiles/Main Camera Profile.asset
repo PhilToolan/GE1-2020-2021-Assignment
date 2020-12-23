@@ -27,7 +27,7 @@ MonoBehaviour:
     value: {x: 0.5, y: 0.5}
   intensity:
     overrideState: 1
-    value: 0.3
+    value: 0.5
   smoothness:
     overrideState: 1
     value: 0.2
@@ -62,7 +62,7 @@ MonoBehaviour:
     value: 1
   intensity:
     overrideState: 1
-    value: 8
+    value: 10
   threshold:
     overrideState: 1
     value: 1
@@ -91,6 +91,40 @@ MonoBehaviour:
   dirtIntensity:
     overrideState: 1
     value: 0
+--- !u!114 &-1708188073853756421
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b77c5407dc277943b591ade9e6b18c5, type: 3}
+  m_Name: LensDistortion
+  m_EditorClassIdentifier: 
+  active: 0
+  enabled:
+    overrideState: 1
+    value: 1
+  intensity:
+    overrideState: 1
+    value: 30
+  intensityX:
+    overrideState: 1
+    value: 1
+  intensityY:
+    overrideState: 1
+    value: 1
+  centerX:
+    overrideState: 1
+    value: 0
+  centerY:
+    overrideState: 1
+    value: 0
+  scale:
+    overrideState: 1
+    value: 1
 --- !u!114 &-754994160131174914
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -1420,6 +1454,36 @@ MonoBehaviour:
   - {fileID: -754994160131174914}
   - {fileID: -4025889886351111761}
   - {fileID: 7196450797290356450}
+  - {fileID: 581619048800291541}
+  - {fileID: -1708188073853756421}
+--- !u!114 &581619048800291541
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d65e486e4de6e5448a8fbb43dc8756a0, type: 3}
+  m_Name: Grain
+  m_EditorClassIdentifier: 
+  active: 1
+  enabled:
+    overrideState: 1
+    value: 1
+  colored:
+    overrideState: 1
+    value: 0
+  intensity:
+    overrideState: 1
+    value: 0.1
+  size:
+    overrideState: 1
+    value: 2
+  lumContrib:
+    overrideState: 1
+    value: 0.8
 --- !u!114 &7196450797290356450
 MonoBehaviour:
   m_ObjectHideFlags: 3
