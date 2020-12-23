@@ -5,26 +5,26 @@ using UnityEngine;
 public class AudioViz2 : MonoBehaviour
 {
     public AudioAnalyzer audioAnalyzer;
-    private Material _trailMat;
-    public Color _trailColor;
+    //private Material trailMat;
+    //public Color trailColor;
 
-    public float _degree, _scale;
-    public int _numberStart;
-    public int _stepSize;
-    public int _maxIteration;
+    public float degree, scale;
+    public int numberStart;
+    public int stepSize;
+    public int maxIteration;
 
     //Lerping
-    public bool _useLerping;
-    private bool _isLerping;
-    private Vector3 _startPosition, _endPosition;
-    private float _lerpPosTimer, _lerpPosSpeed;
-    public Vector2 _lerpPosSpeedMinMax;
-    public AnimationCurve _lerpPosAnimCurve;
-    public int _lerpPosBand;
+    public bool useLerping;
+    private bool isLerping;
+    private Vector3 startPosition, endPosition;
+    private float lerpPosTimer, lerpPosSpeed;
+    public Vector2 lerpPosSpeedMinMax;
+    public AnimationCurve lerpPosAnimCurve;
+    public int lerpPosBand;
 
-    private int _number;
-    private int _currentIteration;
-    private TrailRenderer _trailRenderer;
+    private int number;
+    private int currentIteration;
+    //private TrailRenderer trailRenderer;
     private Vector2 CalculatePhyllotaxis(float degree, float scale, int number)
     {
         double angle = number * (degree * Mathf.Deg2Rad);
@@ -34,18 +34,18 @@ public class AudioViz2 : MonoBehaviour
         Vector2 vec2 = new Vector2(x, y);
         return vec2;
     }
-    private Vector2 _phyllotaxisPosition;
+    private Vector2 phyllotaxisPosition;
 
-    private bool _forward;
-    public bool _repeat, _invert;
+    private bool forward;
+    public bool repeat, invert;
 
     //Scaling
-    public bool _useScaleAnimation, _useScaleCurve;
-    public Vector2 _scaleAnimMinMax;
-    public AnimationCurve _scaleAnimCurve;
-    public float _scaleAnimSpeed;
-    public int _scaleBand;
-    private float _scaleTimer, _currentScale;
+    public bool useScaleAnimation, useScaleCurve;
+    public Vector2 scaleAnimMinMax;
+    public AnimationCurve scaleAnimCurve;
+    public float scaleAnimSpeed;
+    public int scaleBand;
+    private float scaleTimer, currentScale;
 
 
 
@@ -55,107 +55,107 @@ public class AudioViz2 : MonoBehaviour
 
     void SetLerpPositions()
     {
-        _phyllotaxisPosition = CalculatePhyllotaxis(_degree, _currentScale, _number);
-        _startPosition = this.transform.localPosition;
-        if (!float.IsNaN(_phyllotaxisPosition.x) && !float.IsNaN(_phyllotaxisPosition.y))
+        phyllotaxisPosition = CalculatePhyllotaxis(degree, currentScale, number);
+        startPosition = this.transform.localPosition;
+        if (!float.IsNaN(phyllotaxisPosition.x) && !float.IsNaN(phyllotaxisPosition.y))
         {
-            _endPosition = new Vector3(_phyllotaxisPosition.x, _phyllotaxisPosition.y, 0);
+            endPosition = new Vector3(phyllotaxisPosition.x, phyllotaxisPosition.y, 0);
         }
     }
 
     // Use this for initialization
     void Awake()
     {
-        _currentScale = _scale;
-        _forward = true;
-        _trailRenderer = GetComponent<TrailRenderer>();
-        _trailMat = new Material(_trailRenderer.material);
-        _trailMat.SetColor("_TintColor", _trailColor);
-        _trailRenderer.material = _trailMat;
-        _number = _numberStart;
-        transform.localPosition = CalculatePhyllotaxis(_degree, _currentScale, _number);
-        if (_useLerping)
+        currentScale = scale;
+        forward = true;
+        //trailRenderer = GetComponent<TrailRenderer>();
+        //trailMat = new Material(trailRenderer.material);
+        //trailMat.SetColor("TintColor", trailColor);
+        //trailRenderer.material = trailMat;
+        number = numberStart;
+        transform.localPosition = CalculatePhyllotaxis(degree, currentScale, number);
+        if (useLerping)
         {
-            _isLerping = true;
+            isLerping = true;
             SetLerpPositions();
         }
     }
 
     private void Update()
     {
-        if (_useScaleAnimation)
+        if (useScaleAnimation)
         {
-            if (_useScaleCurve)
+            if (useScaleCurve)
             {
-                _scaleTimer += (_scaleAnimSpeed * AudioAnalyzer.bands[_scaleBand]) * Time.deltaTime;
-                if (_scaleTimer >= 1)
+                scaleTimer += (scaleAnimSpeed * AudioAnalyzer.bands[scaleBand]) * Time.deltaTime;
+                if (scaleTimer >= 1)
                 {
-                    _scaleTimer -= 1;
+                    scaleTimer -= 1;
                 }
-                _currentScale = Mathf.Lerp(_scaleAnimMinMax.x, _scaleAnimMinMax.y, _scaleAnimCurve.Evaluate(_scaleTimer));
+                currentScale = Mathf.Lerp(scaleAnimMinMax.x, scaleAnimMinMax.y, scaleAnimCurve.Evaluate(scaleTimer));
             }
             else
             {
-                _currentScale = Mathf.Lerp(_scaleAnimMinMax.x, _scaleAnimMinMax.y, AudioAnalyzer.bands[_scaleBand]);
+                currentScale = Mathf.Lerp(scaleAnimMinMax.x, scaleAnimMinMax.y, AudioAnalyzer.bands[scaleBand]);
             }
         }
 
 
-        if (_useLerping)
+        if (useLerping)
         {
-            if (_isLerping)
+            if (isLerping)
             {
-                _lerpPosSpeed = Mathf.Lerp(_lerpPosSpeedMinMax.x, _lerpPosSpeedMinMax.y, _lerpPosAnimCurve.Evaluate(AudioAnalyzer.bands[_lerpPosBand]));
-                _lerpPosTimer += Time.deltaTime * _lerpPosSpeed;
-                transform.localPosition = Vector3.Lerp(_startPosition, _endPosition, Mathf.Clamp01(_lerpPosTimer));
-                if (_lerpPosTimer >= 1)
+                lerpPosSpeed = Mathf.Lerp(lerpPosSpeedMinMax.x, lerpPosSpeedMinMax.y, lerpPosAnimCurve.Evaluate(AudioAnalyzer.bands[lerpPosBand]));
+                lerpPosTimer += Time.deltaTime * lerpPosSpeed;
+                transform.localPosition = Vector3.Lerp(startPosition, endPosition, Mathf.Clamp01(lerpPosTimer));
+                if (lerpPosTimer >= 1)
                 {
-                    _lerpPosTimer -= 1;
-                    if (_forward)
+                    lerpPosTimer -= 1;
+                    if (forward)
                     {
-                        _number += _stepSize;
-                        _currentIteration++;
+                        number += stepSize;
+                        currentIteration++;
                     }
                     else
                     {
-                        _number -= _stepSize;
-                        _currentIteration--;
+                        number -= stepSize;
+                        currentIteration--;
                     }
-                    if ((_currentIteration >= 0) && (_currentIteration < _maxIteration))
+                    if ((currentIteration >= 0) && (currentIteration < maxIteration))
                     {
                         SetLerpPositions();
                     }
                     else // current iteration has hit 0 or maxiteration
                     {
-                        if (_repeat)
+                        if (repeat)
                         {
-                            if (_invert)
+                            if (invert)
                             {
-                                _forward = !_forward;
+                                forward = !forward;
                                 SetLerpPositions();
                             }
                             else
                             {
-                                _number = _numberStart;
-                                _currentIteration = 0;
+                                number = numberStart;
+                                currentIteration = 0;
                                 SetLerpPositions();
                             }
                         }
                         else
                         {
-                            _isLerping = false;
+                            isLerping = false;
                         }
                     }
                 }
 
             }
         }
-        if (!_useLerping)
+        if (!useLerping)
         {
-            _phyllotaxisPosition = CalculatePhyllotaxis(_degree, _currentScale, _number);
-            transform.localPosition = new Vector3(_phyllotaxisPosition.x, _phyllotaxisPosition.y, 0);
-            _number += _stepSize;
-            _currentIteration++;
+            phyllotaxisPosition = CalculatePhyllotaxis(degree, currentScale, number);
+            transform.localPosition = new Vector3(phyllotaxisPosition.x, phyllotaxisPosition.y, 0);
+            number += stepSize;
+            currentIteration++;
         }
     }
 
