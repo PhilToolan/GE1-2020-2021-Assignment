@@ -71,7 +71,7 @@ Is custom skybox was made for the scene in Photoshop, it consists of 6 different
 The Club is another audio visualiser that allows the user to *feel* the music. It achieves this by making a procedural tunnel that the user travels through with a visualiser.
 
 #### The Tunnel
-The tunnel is created by making a [Torus](https://en.wikipedia.org/wiki/Torus#:~:text=In%20geometry%2C%20a%20torus%20(plural,called%20a%20torus%20of%20revolution.). This Torus 
+The tunnel is created by making a [Torus](https://en.wikipedia.org/wiki/Torus#:~:text=In%20geometry%2C%20a%20torus%20(plural,called%20a%20torus%20of%20revolution). This Torus 
 is then split up into different sections to make a tunnel. Each tunnel will add up to a total of 360 degrees but it is ensured that the tunnel does not loop back on 
 itself so that it can twist and wind endlessly. Each tunnel's first vertices are the same as the previous tunnels last vertices to ensure that they line up correctly. There is a 
 certain amount of randomness added to the curve of the tunnel and the amount of segments to the tunnel, this makes the tunnel feel more twisty and windy and less repetitive.
