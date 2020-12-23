@@ -85,7 +85,13 @@ This is an editied version of a tutorial by Peerplay on [Procedural Phyllotaxis]
 other visualisation. It consists of a trail renderer where its movement is controlled by the music. There is also a sphere with the same material on it that is used in the 
 retrowave scene. A light is shone from the trail onto the ball, as it gets to the emmissive part of the material it shines brighter thanks to a bloom effect on the camera from 
 postprocessing, this a nice effect which adds to the spectacle of the scene.
+#### The Cameras
+Like in Pong Effect, there is two cameras used and they are layered on each other. The camera for audioviz2 is set as depth only and is layered on top of the main camera which 
+sees the tunnel.
 
+
+## What I am most proud of
+I am most proud of the tunnel system. It took a lot of time and headaches to implement but I believe the result I came out with looks great.
 
 
 
