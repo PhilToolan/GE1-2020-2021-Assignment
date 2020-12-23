@@ -6,7 +6,7 @@
 The assingment will be a series of audio visual experiences. There is 3 experiences available: "Pong Effect", "Retrowave" and "The Club". Pong Effect is a simple game of pong 
 that takes place while travelling through a procedural world. Retrowave is a simple audio visualisation that uses lots of post processing effects to get a synthwave feel to the 
 visual. The club is an audio visualisation that takes place while travelling through an endless procedural tunnel. I had to recreate the repo during the assignment so here is 
-the original repo to track the commits: https://github.com/PhilToolan/GE1-2020-2021-Assingment
+the original repo to track the commits: https://github.com/PhilToolan/GE1-2020-2021-Assingment. Each experience will be broken down by GameObject in this explanation.
 
 ## Pong Effect
 
@@ -14,8 +14,32 @@ the original repo to track the commits: https://github.com/PhilToolan/GE1-2020-2
 Pong Effect is essentially a mix of *Tetris Effect* and *Super Hexagon*. The player travels through an infinite procedural world while trying to keep a ball from going off the 
 screen. The idea is to allow the user to lose themselves in the music and take a break from the real world.
 
-
-
+#### Terrain
+The terrain object holds the prefab of the terrain tile. It also has the script "InfiniteTerrain" added to it. This script controls the placement of the terrain. It is a lightly 
+edited version of the script we used in the labs.
+#### TerainTile
+The terain tile is stored as a prefab and is spawn at runtime by Terrain. It has the script TerrainTile attached to it and has the material TerrainMaterial. TerrainTile controls 
+the geometry of the terrain, it is similar to one used in the labs where mountains and valleys are made with the terrain and perlin noise is added to prevent it from being too 
+smooth. 
+#### Player
+The player has two scripts attached, fly over and player movement. Fly over controls the movement over the terrain and player movement controls the movement of the camrea and 
+some scene management. The camera that move through the scene is added as a child and two particle effects are added as children of the camera. These make you feel more like you 
+are moving.
+#### Ball
+The ball is a simple circle. It has an audio source component attached, a trail renderer and the script Ball. The script controls all the aspects of the game: sound effects, 
+ball movement, score text.
+#### PongPlayer
+The PongPlayer controls the player movement in the game of pong. There is a gameobject in the middle of the screen that draws a raycast in the direction of the mouse. Where this
+raycast hits a boundary is where the paddle moves. Everytime the ball collides with a paddle the score increases and the movement of the ball goes in the opposite direction.
+#### Camera2D
+This camera only sees the gameobjects of the pong game, the two cameras in the scene are layered. This allows us to move through a 3D space while playing a 2D game.
+#### Frames and Paddles
+The Frames are just colliders on each side of the game, where the raycast from Player collides with the frame is where the paddle moves to. There is two paddles in the scene one 
+for the sides and one for top and bottom. 
+#### GameMusic
+Plays the music.
+#### Canvas
+This displays the score UI to the player.
 
 ## Retrowave
 
