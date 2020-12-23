@@ -24,7 +24,7 @@ smooth.
 #### Player
 The player has two scripts attached, fly over and player movement. Fly over controls the movement over the terrain and player movement controls the movement of the camrea and 
 some scene management. The camera that move through the scene is added as a child and two particle effects are added as children of the camera. These make you feel more like you 
-are moving.
+are moving. Fog is also added to the scene lighting for this camera so the user cannot see the world being generated in front of them.
 #### Ball
 The ball is a simple circle. It has an audio source component attached, a trail renderer and the script Ball. The script controls all the aspects of the game: sound effects, 
 ball movement, score text.
@@ -46,11 +46,48 @@ This displays the score UI to the player.
 ### Description
 Retrowave is a simple audio visualiser that leans heavily on the synth wave style of the 1980s.
 
+#### Main Camera
+Follows the car asset. Post processing layer added to the camera to facilitate the effects of the scene. There is no fog in this scene as the idea of the ground being generated 
+in front of you leans into the aesthetic of the scene.
+#### Terrain
+This is much the same as Terrain in Pong Effect, it is being sampled differently so that the terrain is completely smooth and flat again adding to the aesthetic. The material 
+used on the terrain tile here is different however. This is a custom material made in photoshop, it consists of a simple png of the desired pattern in the desired colour and an 
+identical png that is in black and white. The black and white png is used as an emission map on the material and allows the material to glow in the correct areas when a bloom 
+effect is put on the camera with Post processing. 
+#### Car
+The car is the one asset imported for the assignment. It came with its own textures, materials and mesh. Added to the car is 2 trail renderers, a camera target and the audio 
+visualiser. The audio visualiser is a child of the car object as it will then always be the same distance away from the car. The visualiser is similar to the visualiser used in 
+the audio lab, it has a custom shader on it that allows the material to change colour at certain Y values. 
+#### Audio Analyzer
+The audio analyzer takes in the music and splits it into 7 different frequency bands.
+#### PostProcessing
+This gameobject holds all the postprocessing effects in the scene, Bloom, Grain, Vignette, chromatic aberration and color grading.
+#### SkyBox
+Is custom skybox was made for the scene in Photoshop, it consists of 6 different images which form the skybox of the scene. This further adds to the aesthetic of the scene.
 
 ## The Club
 
 ### Description
-The Club is another audio visualiser that allows the user to *feel* the music.
+The Club is another audio visualiser that allows the user to *feel* the music. It achieves this by making a procedural tunnel that the user travels through with a visualiser.
+
+#### The Tunnel
+The tunnel is created by making a [Torus](https://en.wikipedia.org/wiki/Torus#:~:text=In%20geometry%2C%20a%20torus%20(plural,called%20a%20torus%20of%20revolution.). This Torus 
+is then split up into different sections to make a tunnel. Each tunnel will add up to a total of 360 degrees but it is ensured that the tunnel does not loop back on 
+itself so that it can twist and wind endlessly. Each tunnel's first vertices are the same as the previous tunnels last vertices to ensure that they line up correctly. There is a 
+certain amount of randomness added to the curve of the tunnel and the amount of segments to the tunnel, this makes the tunnel feel more twisty and windy and less repetitive.
+At first, to move through the tunnel I used raycasts but this was not ideal as the tunnel is not perfectly smooth so it felt quite bumpy to the user and actually made me feel 
+motion sickness at times. To solve this problem the movement is done in the opposite. The tunnel moves towards the camera and the camera always remains at the origin. This 
+worked well but you couldnt feel the twists and turns of the tunnel. To solve this issue the whole tunnel system is rotated with each tunnel so basically the world rotates and 
+moves around the camera while it stays perfectly still. 
+A shader is applied to the material of the tunnel that changes colour from the origin of the world. This adds another feeling of momentum and makes the experience more exciting. 
+#### Audio Viz 2
+This is an editied version of a tutorial by Peerplay on [Procedural Phyllotaxis](https://www.youtube.com/watch?v=kNEEvGFU7m0). It uses the same audio analyzer script from the 
+other visualisation. It consists of a trail renderer where its movement is controlled by the music. There is also a sphere with the same material on it that is used in the 
+retrowave scene. A light is shone from the trail onto the ball, as it gets to the emmissive part of the material it shines brighter thanks to a bloom effect on the camera from 
+postprocessing, this a nice effect which adds to the spectacle of the scene.
+
+
+
 
 ## Resources
 
