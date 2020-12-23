@@ -5,7 +5,8 @@
 ## Description:
 The assingment will be a series of audio visual experiences. There is 3 experiences available: "Pong Effect", "Retrowave" and "The Club". Pong Effect is a simple game of pong 
 that takes place while travelling through a procedural world. Retrowave is a simple audio visualisation that uses lots of post processing effects to get a synthwave feel to the 
-visual. The club is an audio visualisation that takes place while travelling through an endless procedural tunnel.
+visual. The club is an audio visualisation that takes place while travelling through an endless procedural tunnel. I had to recreate the repo during the assignment so here is 
+the original repo to track the commits: https://github.com/PhilToolan/GE1-2020-2021-Assingment
 
 ## Pong Effect
 
