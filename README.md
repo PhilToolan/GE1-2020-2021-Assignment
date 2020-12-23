@@ -3,7 +3,9 @@
 # Philip Toolan, DT282, C17433026
 
 ## Description:
-The assingment will be a series of audio visual experiences. There is 3 experiences available: "Pong Effect", "Retrowave" and "The Club".
+The assingment will be a series of audio visual experiences. There is 3 experiences available: "Pong Effect", "Retrowave" and "The Club". Pong Effect is a simple game of pong 
+that takes place while travelling through a procedural world. Retrowave is a simple audio visualisation that uses lots of post processing effects to get a synthwave feel to the 
+visual. The club is an audio visualisation that takes place while travelling through an endless procedural tunnel.
 
 ## Pong Effect
 
