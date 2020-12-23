@@ -118,3 +118,5 @@ The research for The Club:
 - https://www.youtube.com/watch?v=IsDfnIbshj4
 - https://www.youtube.com/watch?v=wtXirrO-iNA
 - https://www.youtube.com/watch?v=kNEEvGFU7m0
+- https://en.wikipedia.org/wiki/Torus
+- https://www.youtube.com/watch?v=MXm9OmzRe2o&list=PL1n0B6z4e_E5qaYwUOlJ63XI2OR9ty7Bs
